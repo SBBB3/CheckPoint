@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*-INICIA---------------- NAV-----------------------*/
+nav{
+    width: 100vw;
+    min-height: 4vh;
+    background-color: black;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+a{
+    color: antiquewhite;
+    text-decoration: none;
+    gap: 5rem;
+    /* margin-left:0.5rem; */
+}
+/*-TERMINA--------------- NAV-----------------------*/
+
+
+
+
+/*-INICIA---------------- HEADER-----------------------*/
+header{
+    border: 1px solid purple;
+    min-height: 20vh;
+    background-image: url(../images/image01.jpg);
+    background-size: 270%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h3,h4{
+    color: antiquewhite;
+    
+}
+/*-TERMINA--------------- HEADER-----------------------*/
+
+
+
+
+/*-INICIA---------------- MAIN -----------------------*/
+main{
+    min-height: 72vh;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ----EMPIEZA----- SECCION WELCOME */
+.welcome{
+    height: 40%;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome img{
+    width: 20%;
+    /* min-height: 20vh; */
+}
+
+#welcome_head{
+    display: flex;
+    justify-content: center;
+    color: rgb(49, 49, 49);
+}
+
+.welcome_content{
+    min-height: 80%;
+    /* border: 1px solid rgb(98, 255, 0);
+    background-color: rgb(7, 100, 176); */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: rgb(49, 49, 49);
+    padding: 1rem;
+    gap: 1rem;
+    }
+
+#list{
+    background-color: rgb(249, 255, 253);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+/* ----TERMINA----- SECCION WELCOME */
+
+
+
+/* ----EMPIEZA----- SECCION PURCHASE */
+.purchase{
+    height: 40%;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#purchase_head{
+    background-color: black;
+    color: white;
+}
+.purchase_content{
+    height: 40%;
+    background-color: rgb(213, 52, 52);
+    border: 2px solid red;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.purchase_content img{
+    height: 25vh;
+}
+/*--TERMINA---- SECCION PURCHASE */
+
+
+
+.moreInfo{
+    height: 40%;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* ul{
+    list type: circle */
+
+/*-TERMINA--------------- MAIN -----------------------*/
+
+
+
+
+
+
+/*-INICIA---------------- FOOTER-----------------------*/
+footer{
+    border: 1px solid rgb(38, 255, 0);
+    min-height: 4vh;
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 0.4rem;
+
+}
+/*-TERMINA--------------- FOOTER-----------------------*/
+
+
+
+/*-INICIA---------------- MEDIA QUERY -----------------------*/
+@media screen and (max-widht:768px) {
+    a{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+
+    .welcome_content{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        gap: 1rem;
+    }
+
+    .welcome img{
+        min-width: 50%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+    
+   /*  .purchase_content{
+        flex-wrap: wrap;
+    } */
+}
+
+/*-TERMINA---------------- MEDIA QUERY -----------------------*/
